@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+/* Colores principales */
+:root {
+  --color-principal: #ff6ec7; /* rosa juvenil */
+  --color-secundario: #6c63ff; /* morado moderno */
+  --color-fondo: #fff0f6; /* fondo pastel */
+  --color-texto: #333;
+  --color-footer: #ffb6f9;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+/* Navbar */
+nav {
+  background-color: var(--color-principal);
+  padding: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-secundario);
+}
+
+/* Footer */
+footer {
+  background: var(--color-footer);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-weight: bold;
+  border-top: 2px solid var(--color-principal);
+}
